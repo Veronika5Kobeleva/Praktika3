@@ -1,14 +1,17 @@
 import React from 'react';
 import images from '../images/images.png';
+import { Link } from 'react-router-dom';
+
 
 const Header = () => {
     return ( 
       <header>
       <nav className="navbar navbar-expand-lg navbar-light bg-">
         <div className="container-fluid">
-          <a className="navbar-brand" href="index.html">
+          {/* <a className="navbar-brand" href="index.html">
             <img src={images} className="w-25 rounded-3" alt="logo" />
-          </a>
+          </a> */}
+          <Link to={"/"}><img src={images} alt="Logo" className="" /></Link>
           <button
             className="navbar-toggler"
             type="button"
