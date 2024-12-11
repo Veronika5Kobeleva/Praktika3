@@ -11,7 +11,7 @@ const Header = () => {
           {/* <a className="navbar-brand" href="index.html">
             <img src={images} className="w-25 rounded-3" alt="logo" />
           </a> */}
-          <Link to={"/"}><img src={images} alt="Logo" className="" /></Link>
+          <Link to={"/"}><img src={images} alt="Logo" className="w-25 rounded-3" /></Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -26,29 +26,29 @@ const Header = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="index.html">
+                <Link className="nav-link" aria-current="page" to={"/"}>
                   Главная
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="html/profile.html">
+                <Link className="nav-link" to={"/profile"}>
                   Личный кабинет
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="html/registration.html">
+                <Link className="nav-link" to={"/registration"}>
                   Регистрация
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="html/add_pet.html">
+                <Link className="nav-link" to={"/add_pet"}>
                   Добавить объявление
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="html/search.html">
+                <Link className="nav-link" to={"/search"}>
                   Поиск по объявлениям
-                </a>
+                </Link>
               </li>
             </ul>
             <form className="d-flex">

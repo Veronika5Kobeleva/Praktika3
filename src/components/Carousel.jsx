@@ -46,7 +46,20 @@ const Header = () => {
       />
     </div>
     <div className="carousel-inner">
-      <div className="carousel-item active">
+
+    <div className={props.css_class}>
+        <img
+          src={props.data.image}
+          className="d-block m-auto"
+          alt={props.data.kind}        
+        />
+        <h2 className="text-center">{props.data.kind}</h2>
+        <p className="text-center">
+        {props.data.description}
+        </p>
+      </div>
+
+    <div className="carousel-item active">
         <img
           src={cat}
           className="d-block m-auto"

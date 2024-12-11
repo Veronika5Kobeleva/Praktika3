@@ -1,4 +1,7 @@
 import React from 'react';
+import gusenicsa from '../images/gusenicsa.png';
+import fish from '../images/fish.png';
+
 
 const DobCard2 = () => {
     return (
@@ -16,7 +19,7 @@ const DobCard2 = () => {
       style={{ minWidth: 300, width: "45%" }}
     >
       <img
-        src="../fish.png"
+       src={fish}
         className="w-75 d-block mx-auto"
         alt="рисунок животного"
       />
@@ -62,7 +65,7 @@ const DobCard2 = () => {
         className="position-absolute text-danger"
         style={{ top: 15, right: 15, cursor: "pointer" }}
       >
-        ❌
+        
       </div>
       <button type="submit" className="btn btn-dark">
         Редактировать объявление
@@ -73,7 +76,7 @@ const DobCard2 = () => {
       style={{ minWidth: 300, width: "45%" }}
     >
       <img
-        src="../gusenicsa.png"
+         src={gusenicsa}
         className="w-75 d-block mx-auto"
         alt="рисунок животного"
       />
@@ -118,7 +121,7 @@ const DobCard2 = () => {
         className="position-absolute text-danger"
         style={{ top: 15, right: 15, cursor: "pointer" }}
       >
-        ❌
+        
       </div>
       <button type="submit" className="btn btn-dark">
         Редактировать объявление
