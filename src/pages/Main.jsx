@@ -8,15 +8,15 @@ import Card1 from '../components/Card1';
 
 const Main = () => {
 
-    var props = {
-        "data": {
-            "id": 6,
-            "kind": "Кенгуру",
-            "description": "Кенгуру из Бразилии, любит прыгать, ласковая",
-            "image": "https://placecats.com/millie/500/300"
-        },
-        "css_class": "carousel-item"
-    };
+    // var props = {
+    //     "data": {
+    //         "id": 6,
+    //         "kind": "Кенгуру",
+    //         "description": "Кенгуру из Бразилии, любит прыгать, ласковая",
+    //         "image": "https://placecats.com/millie/500/300"
+    //     },
+    //     "css_class": "carousel-item"
+    // };
     // var props = {
     //     "data": {
     //         "id": 5,
@@ -46,7 +46,7 @@ const Main = () => {
             <Sub/> 
             </main>
 
-            <Card1 {...props} /> 
+            {/* <Card1 {...props} />  */}
 
             <Footer/>
         </div>

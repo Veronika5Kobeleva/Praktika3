@@ -15,7 +15,7 @@ function Card1(props) {
     return (
         <div className={props.css_class}>
         <img
-          src={props.data.image}
+          src={'https://pets.сделай.site' + props.data.image}
           className="d-block m-auto"
           alt={props.data.kind}        
         />
