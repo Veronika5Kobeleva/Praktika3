@@ -10,13 +10,12 @@
 
 import React from 'react';
 
-function Card1(props) {   
-    
+function Card1(props) { 
     return (
         <div className={props.css_class}>
         <img
           src={'https://pets.сделай.site' + props.data.image}
-          className="d-block m-auto"
+          className="d-block m-auto w-50"
           alt={props.data.kind}        
         />
         <h2 className="text-center">{props.data.kind}</h2>

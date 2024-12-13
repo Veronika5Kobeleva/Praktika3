@@ -1,12 +1,9 @@
-import React from 'react';
 import Header from '../components/Header';
 import Carousel from '../components/Carousel'
 import Sub from '../components/Sub';
 import Footer from '../components/Footer';
-import Card6 from '../components/Card6';
-import Card1 from '../components/Card1';
-
-const Main = () => {
+import CardAnimal from '../components/CardAnimal';
+import React, {useEffect, useState} from 'react';
 
     // var props = {
     //     "data": {
@@ -36,18 +33,33 @@ const Main = () => {
     //     "css_class": "carousel-item"
     // };
     
+    function Main(props) {
+        let [cards, setCards]=useState([]);
+        
+        useEffect(()=>load(), []);
+        function load(){
+            fetch('https://pets.xn--80ahdri7a.site/public/api/pets')
+                .then(response=>response.json())
+                .then(result=>{
+                    console.log(result);
+                    
+      setCards(result.data.orders.map((card)=><CardAnimal data={card}/>));
+      debugger;
+                })
+        }
 
     return (
         <div>            
             <Header/>
             <main style={{minHeight: "70vh"}}>
             <Carousel/>
-            {/* <Card6/> */}
+            <div
+             className="d-flex flex-row flex-wrap"
+            style={{ paddingLeft: "11%", paddingRight: "11%" }} >
+            {cards}</div>
+            <br />
             <Sub/> 
             </main>
-
-            {/* <Card1 {...props} />  */}
-
             <Footer/>
         </div>
     );
