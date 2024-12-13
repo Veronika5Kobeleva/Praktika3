@@ -54,7 +54,7 @@ import React, {useEffect, useState} from 'react';
             <main style={{minHeight: "70vh"}}>
             <Carousel/>
             <div
-             className="d-flex flex-row flex-wrap"
+             className="d-flex flex-row flex-wrap justify-content-center"
             style={{ paddingLeft: "11%", paddingRight: "11%" }} >
             {cards}</div>
             <br />

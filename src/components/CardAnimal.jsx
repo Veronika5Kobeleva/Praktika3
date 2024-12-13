@@ -9,7 +9,7 @@ const CardAnimal = (props) => {
     >
       <img
         src={'https://pets.сделай.site'+props.data.photos}
-        className="w-75"
+        className="w-75 d-block mx-auto"
         alt="рисунок животного"
         style={{
           maxHeight: "100vh",
