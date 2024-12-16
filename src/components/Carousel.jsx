@@ -38,7 +38,17 @@ let  indicators=slide.data.pets.map((pet, index)=>{
 
 
 return (
-  <div>     
+  <div> 
+    <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n            .hh{\n              background-color:  rgb(173, 49, 223);\n              color: aliceblue;\n              text-align: center;\n            }\n        "
+  }}
+/>    
+  <h2 className="hh">Найденные животные</h2>
+  <br />
+  <br />
+
       <div id="carouselExampleIndicators" className="carousel slide carousel-dark w-50 m-auto" data-bs-ride="carousel" style={{minWidth: '250'}}>
 <div className="carousel-indicators">
   {indicators}

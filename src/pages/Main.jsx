@@ -5,33 +5,6 @@ import Footer from '../components/Footer';
 import CardAnimal from '../components/CardAnimal';
 import React, {useEffect, useState} from 'react';
 
-    // var props = {
-    //     "data": {
-    //         "id": 6,
-    //         "kind": "Кенгуру",
-    //         "description": "Кенгуру из Бразилии, любит прыгать, ласковая",
-    //         "image": "https://placecats.com/millie/500/300"
-    //     },
-    //     "css_class": "carousel-item"
-    // };
-    // var props = {
-    //     "data": {
-    //         "id": 5,
-    //         "kind": "Крокодил",
-    //         "description": "Крокодил зеленый, любит людей.",
-    //         "image": "https://placecats.com/neo_banana/500/300"
-    //     },
-    //     "css_class": "carousel-item"
-    // };
-    // var props = {
-    //     "data": {
-    //         "id": 4,
-    //         "kind": "Зебра",
-    //         "description": "Зебра полосатая, высокая. ",
-    //         "image": "https://placecats.com/neo_2/500/300"
-    //     },
-    //     "css_class": "carousel-item"
-    // };
     
     function Main(props) {
         let [cards, setCards]=useState([]);
@@ -49,10 +22,22 @@ import React, {useEffect, useState} from 'react';
         }
 
     return (
-        <div>            
+        <div>  
+            <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n            .hh{\n              background-color:  rgb(173, 49, 223);\n              color: aliceblue;\n              text-align: center;\n            }\n        "
+  }}
+/>    
+         
             <Header/>
             <main style={{minHeight: "70vh"}}>
             <Carousel/>
+
+<h2 className="hh">Карточки потерянных животных</h2>
+  <br />
+  <br />
+   
             <div
              className="d-flex flex-row flex-wrap justify-content-center"
             style={{ paddingLeft: "11%", paddingRight: "11%" }} >

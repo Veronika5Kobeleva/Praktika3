@@ -1,12 +1,30 @@
-/*{
-    "data": {
-        "id": 6,
-        "kind": "Кенгуру",
-        "description": "Кенгуру из Бразилии, любит прыгать, ласковая",
-        "image": "/storage/images/06vZ5JD5SiY9scNCLx6NRku8f7t85CvBbSmbGObu.png"
-    },
-    "css_class": "carousel-item"
-}*/
+ // var props = {
+    //     "data": {
+    //         "id": 6,
+    //         "kind": "Кенгуру",
+    //         "description": "Кенгуру из Бразилии, любит прыгать, ласковая",
+    //         "image": "https://placecats.com/millie/500/300"
+    //     },
+    //     "css_class": "carousel-item"
+    // };
+    // var props = {
+    //     "data": {
+    //         "id": 5,
+    //         "kind": "Крокодил",
+    //         "description": "Крокодил зеленый, любит людей.",
+    //         "image": "https://placecats.com/neo_banana/500/300"
+    //     },
+    //     "css_class": "carousel-item"
+    // };
+    // var props = {
+    //     "data": {
+    //         "id": 4,
+    //         "kind": "Зебра",
+    //         "description": "Зебра полосатая, высокая. ",
+    //         "image": "https://placecats.com/neo_2/500/300"
+    //     },
+    //     "css_class": "carousel-item"
+    // };
 
 import React from 'react';
 

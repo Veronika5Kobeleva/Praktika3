@@ -31,7 +31,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={"/profile"}>
+                <Link className="nav-link" to={"/authentication"}>
                   Личный кабинет
                 </Link>
               </li>

@@ -7,6 +7,7 @@ const CardAnimal = (props) => {
       className="d-flex flex-row flex-wrap border m-3 p-3"
       style={{ minWidth: 300, width: "30%" }}
     >
+      
       <img
         src={'https://pets.сделай.site'+props.data.photos}
         className="w-75 d-block mx-auto"
@@ -19,6 +20,7 @@ const CardAnimal = (props) => {
         }}
       />
       
+    
       <p
         className="w-50 text-primary"
         style={{ minWidth: 30, marginBottom: 10 }}
