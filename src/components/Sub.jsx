@@ -30,7 +30,7 @@ const Sub = () => {
                 </div>
                 <button type="submit" className="btn btn-dark">Подписаться</button>
             </form>
-            <div className="alert  d-none w-50 m-auto p-3 color text-white" role="alert" rev={message} id="message">
+            <div className="alert  d-none w-50 m-auto p-3 text-black" role="alert" rev={message} id="message">
                 Вы успешно подписались на новости!
             </div>
             <pre/>

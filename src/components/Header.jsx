@@ -1,6 +1,7 @@
 import React from 'react';
 import images from '../images/images.png';
 import { Link } from 'react-router-dom';
+import Search2 from '../components/Search2';
 
 
 const Header = () => {
@@ -51,27 +52,8 @@ const Header = () => {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex">
-              <input
-                className="form-control me-2"
-                type="search"
-                list="pets"
-                placeholder="Поиск"
-                aria-label="Search"
-              />
-              <button className="btn btn-dark" onclick="">
-                Поиск
-              </button>
-              <datalist id="pets">
-                <option value="Кошка"></option>
-                <option value="Собака"></option>
-                <option value="Рысь"></option>
-                <option value="Хомяк"></option>
-                <option value="Гусеница"></option>
-                <option value="Попугай"></option>
-                <option value="Летучая мышь"></option>
-              </datalist>
-            </form>
+            
+          <Search2/>
           </div>
         </div>
       </nav>

@@ -26,7 +26,7 @@ return
         } 
       
     console.log(user)
-    let myHeaders = new Header();
+    let myHeaders = {};
     myHeaders.append("Content-Type", "application/json");
   
     let raw = JSON.stringify(user);
@@ -59,9 +59,15 @@ return
     
   }
   return (<div>
-    
+    <style
+  dangerouslySetInnerHTML={{
+    __html:
+      "\n            .hh{\n              background-color:  rgb(173, 49, 223);\n              color: aliceblue;\n              text-align: center;\n            }\n        "
+  }}
+/>   
+
       <main style={{minHeight: "70vh"}}>
-    <h2 className="text-center text-white bg-primary m-2">Аутентификация</h2>
+    <h2 className="hh">Аутентификация</h2>
     <div className="p-3">
         <form className="w-50 g-3 m-auto border p-3 needs-validation" style={{minWidth: "300px"}} onSubmit={auth} noValidate id='form'>
 
@@ -79,7 +85,7 @@ return
         Пожалуйста, введите пароль
       </div>
   </div>
-              <input type="submit" className="btn btn-primary m-3" value="Войти"/>            
+              <input type="submit" className="btn btn-secondary m-3" value="Войти"/>            
         </form>
         <p className='text-danger text-center' id='error' style={{display:'none'}}>Неправилный адрес электронной почты и e-mail</p>
       <p className='text-success text-center' id='success' style={{display:'none'}}>Вы успешно зарегистрировались, ваш токен: {token}</p>
